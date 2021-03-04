@@ -1,0 +1,59 @@
+-INSTALL GIT ON WINDOWS
+https://git-scm.com/download/win
+-INSTALL GIT ON LINUX UBUNTU 20.04
+sudo apt update
+sudo apt install git
+git --version
+---------------------------------------------------------
+-SETTING UP GIT 
+git config --global user.name "Your Name"
+git config --global user.email "youremail@domain.com"
+git config --list //In terminal will appear your name and email
+nano ~/.gitconfig  //The information you enter is stored in your Git configuration file
+    [user] //here you can edit
+    name = Your Name
+    email = youremail@domain.com
+Press CTRL and X, then Y then ENTER to exit the text editor.
+---------------------------------------------------------
+-INIT GIT AND ADD FILES TO REPOSITORY 
+//Open a new VSCode window. Create tmp a readme file. Write something inside.
+git init
+git add .
+git commit -m "readme" 
+git branch -M main //Change the name of master branch to main (not necessary)
+git remote add origin https://github.com/RomuloNavas/JS-Intermedium.git
+git push -u origin main //Upload the branch main (branch name should correspond to a created branch )
+---------------------------------------------------------
+-CLONE A PROJECT IN VSCODE UI 
+
+
+-CLONE A PROJECT IN VSCODE UI 
+Inside the VSCode press on the option Clone repository
+Will ask you to log in GitHub
+Now choose one of your repository 
+VSCode will ask you offer you to open the project on a new window or in the same workspace, choose on a new Window
+-CLONE A PROJECT IN TERMINAL 
+//Inside a new VSCode window write inside the terminal:
+git clone https://github.com/RomuloNavas/JS-Intermedium.git  //The link is created when you create a repository in GitHub
+cd .\JS-Intermedium\
+//Make any modification to a file or create one.
+git add .
+git commit -m "Commit1 - Clone"
+git push
+---------------------------------------------------------
+-PUSHING FILES ON VSCode UI
+//Create of modify a file
+Entry to the section SOURCE CONTROL. Is the button of git in the bar.
+Notice that there are the files that you have modified, Press on button `+` to add a file.
+Press on the button `check` and choose a name for your commit. 
+    If it does not work because you do not have a user.name registered. Configure it with the next command: 
+    git config user.name "RomuloNavas"  //It works only for this repository.
+    git config user.email "romulonavas.com@gmail.com"
+    git config --global user.name "RomuloNavas"  //It works only for all repositories.
+    git config --global user.email "romulonavas.com@gmail.com"
+Press on the three points ... and click on push.
+-PUSHING FILES ON TERMINAL
+//Create some file in the workspace
+git add .
+git commit -m "readme"
+git push
