@@ -25,9 +25,6 @@ git remote add origin https://github.com/RomuloNavas/JS-Intermedium.git
 git push -u origin main //Upload the branch main (branch name should correspond to a created branch )
 ---------------------------------------------------------
 -CLONE A PROJECT IN VSCODE UI 
-
-
--CLONE A PROJECT IN VSCODE UI 
 Inside the VSCode press on the option Clone repository
 Will ask you to log in GitHub
 Now choose one of your repository 
